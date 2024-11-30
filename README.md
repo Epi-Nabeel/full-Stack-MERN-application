@@ -1,165 +1,70 @@
+# Getting Started with Create React App
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# **Car Rental Management System**
+## Available Scripts
 
-A full-stack web application for managing car listings, rentals, and updates for a rental service. Built using the **MERN (MongoDB, Express.js, React, Node.js)** stack, it allows users to view, add, edit, and delete car details.
+In the project directory, you can run:
 
----
+### `npm start`
 
-## **Steps A-C Recap and Moving Forward**
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### **Steps A-C Recap**
-1. **Step A - Project Setup**:
-   - A new React application was created with the `create-react-app` command.
-   - The project folder was structured to accommodate both frontend and backend files.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-2. **Step B - Initial React App Setup**:
-   - The React app was customized with a title and a matching theme for the Car Rental System.
-   - Essential dependencies like `react-router-dom` were installed for navigation.
+### `npm test`
 
-3. **Step C - Component Creation**:
-   - Key components such as `AddCarForm`, `CarList`, `UpdateCarForm`, `DeleteCarButton`, and `CarDetails` were built to handle the core functionalities of the application.
-   - Basic styling was added using `App.css`.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
----
+### `npm run build`
 
-### **Steps Moving Forward**
-1. **Connect Backend to MongoDB**:
-   - Backend set up using **Node.js** and **Express.js**.
-   - MongoDB Atlas was configured with `atlas_url.js` for database connection.
-   - RESTful API routes were implemented for CRUD operations.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-2. **Integrate Frontend and Backend**:
-   - Axios was configured to handle HTTP requests from the frontend to the backend.
-   - Components like `CarList` and `CarDetails` were updated to dynamically fetch data from the backend.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-3. **Testing and Debugging**:
-   - Used Postman to verify API endpoints.
-   - Resolved validation issues in the MongoDB schema for smooth CRUD operations.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
----
+### `npm run eject`
 
-## **Features**
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-### **Frontend**
-- **List Cars**: Display all cars with details.
-- **Add Cars**: Submit new cars to the system.
-- **Edit Cars**: Update car details.
-- **Delete Cars**: Remove cars from the system.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### **Backend**
-- **Create, Read, Update, Delete (CRUD)**:
-  - Add new cars to the database.
-  - Fetch car data using RESTful APIs.
-  - Update or delete cars dynamically.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
----
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## **Installation Instructions**
+## Learn More
 
-### **1. Clone the Repository**
-```bash
-git clone <repository-url>
-cd car-rental-management-system
-```
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### **2. Backend Setup**
-1. Navigate to the `backend` folder:
-   ```bash
-   cd backend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Create a `.env` file and add:
-   ```plaintext
-   PORT=5000
-   MONGO_URI=<your-mongodb-uri>
-   ```
-4. Start the server:
-   ```bash
-   npm run dev
-   ```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-### **3. Frontend Setup**
-1. Navigate to the `frontend` folder:
-   ```bash
-   cd ../frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the React app:
-   ```bash
-   npm start
-   ```
+### Code Splitting
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## **Folder Structure**
+### Analyzing the Bundle Size
 
-```
-car-rental-management-system/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── AddCarForm.js
-│   │   │   ├── AdminPage.js
-│   │   │   ├── ApiData.js
-│   │   │   ├── CarDetails.js
-│   │   │   ├── CarList.js
-│   │   │   ├── CarManagement.js
-│   │   │   ├── DeleteCarButton.js
-│   │   │   ├── Navigation.js
-│   │   │   ├── UpdateCarForm.js
-│   │   └── App.js
-│   ├── App.css
-│   ├── index.js
-│   ├── axiosInstance.js
-├── backend/
-│   ├── server.js
-│   ├── cars.js
-│   ├── atlas_url.js
-│   ├── package.json
-│   ├── package-lock.json
-├── README.md
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
----
+### Making a Progressive Web App
 
-## **API Documentation**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### **Base URL**
-`http://localhost:5000/api`
+### Advanced Configuration
 
-### **Endpoints**
-- **GET /cars**: Fetch all cars.
-- **GET /cars/:id**: Fetch a specific car by ID.
-- **POST /cars**: Add a new car.
-- **PUT /cars/:id**: Update a car.
-- **DELETE /cars/:id**: Remove a car.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
----
+### Deployment
 
-## **Testing the Application**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### **1. Backend**
-- Start the backend server using:
-  ```bash
-  npm run dev
-  ```
-- Test endpoints using Postman, ThunderClient, or a browser.
+### `npm run build` fails to minify
 
-### **2. Frontend**
-- Start the React app using:
-  ```bash
-  npm start
-  ```
-- Test CRUD functionalities (Add, Edit, Delete) via the UI.
-
----
-
-## **Contributors**
-- **Nabeel Ishfark**
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
